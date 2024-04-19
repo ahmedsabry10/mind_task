@@ -4,6 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:task/core/routing/routes.dart';
 import 'package:task/features/auth/login/cubit/login_cubit.dart';
 import 'package:task/features/auth/login/login_screen.dart';
+import 'package:task/features/home/cubit/home_cubit.dart';
 import 'package:task/features/home/home_screen.dart';
 import 'package:task/injection.dart';
 
@@ -17,10 +18,10 @@ class AppRouter {
     switch (settings.name) {
       case Routes.homeScreen:
         return MaterialPageRoute(
-          builder: (_) => HomeScreen()
-          // BlocProvider(
-          //   create: (context) => getIt<UserCubit>(),
-          //   child: HomeScreen()),
+          builder: (_) => 
+          BlocProvider(
+            create: (context) => getIt<HomeCubit>(),
+            child: HomeScreen()),
         );
 
       //login

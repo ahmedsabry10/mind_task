@@ -21,6 +21,8 @@ class LoginCubit extends Cubit<LoginState> {
     response.when(success: (loginResponse) async {
       var prefs = await SharedPreferences.getInstance();
             prefs.setBool('isAuth',true );
+            prefs.setString('userId',loginResponse.data.id);
+            prefs.setString('authKey',loginResponse.data.authKey);
       emit(LoginState.success(loginResponse));
     }, failure: (error) {
       emit(LoginState.error(error: error.apiErrorModel.messages ?? ''));

@@ -77,7 +77,7 @@ class _ApiService implements ApiService {
   }
 
   @override
-  Future<HomeModel> home(
+  Future<HomeModel> getHomeData(
     String lang,
     String auth_key,
     String user_id,
