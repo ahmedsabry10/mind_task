@@ -48,7 +48,7 @@ class _NewProductForHomeState extends State<NewProductForHome> {
                                   SliverGridDelegateWithFixedCrossAxisCountAndFixedHeight(
                                 mainAxisSpacing: 4.0,
                                 crossAxisSpacing: 10,
-                                height: 260.h,
+                                height: 240.h,
                                 crossAxisCount: 2,
                               ),
                               itemCount:
@@ -129,7 +129,7 @@ class _NewProductForHomeState extends State<NewProductForHome> {
                                       //salePrice
                                        Text(
                                           "${widget.productModelList[index].salePrice} درهم ",
-                                          style: TextStyles.font15MainRed,
+                                          style: TextStyles.font15BlackRegular,
                                           maxLines: 1,
                                           overflow: TextOverflow.ellipsis,
                                         ),
