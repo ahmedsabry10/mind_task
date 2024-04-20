@@ -4,14 +4,14 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:task/core/theming/colors.dart';
 import 'package:task/features/home/models/slider/slider_data.dart';
 
-class SliderWidegt extends StatelessWidget {
+class SliderItemWidegt extends StatelessWidget {
   final SliderDataModel sliderModel;
-  SliderWidegt({super.key, required this.sliderModel});
+  SliderItemWidegt({super.key, required this.sliderModel});
 
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.symmetric(horizontal:3.0.w),
+      padding: EdgeInsets.symmetric(horizontal:3.0.w), 
       child: ClipRRect(
         borderRadius: BorderRadius.circular(10),
         child: CachedNetworkImage(

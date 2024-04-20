@@ -5,6 +5,11 @@ import 'package:flutter/material.dart';
 
 String? uId = '';
 
+Widget defaulyLine()=>Container(
+  width: double.infinity,
+  height: 1,
+  color: Colors.grey[300]
+);
 class Constants {
   static void showErrorDialog(
       {required BuildContext context, required String msg}) {

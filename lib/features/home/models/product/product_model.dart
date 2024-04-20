@@ -1,16 +1,6 @@
 import 'package:json_annotation/json_annotation.dart';
 part 'product_model.g.dart';
 
-/*
-"id": "145",
-"name": "عسل  50مل",
-"short_desc": "عسل 500مل للرجال و النساء",
-"main_image": "https://admin.ihoneyherb.com/products/uploads/thumbs/1710227886hiring.png",
-"list_price": "19.99",
-"sale_price": "15.99",
-"discount": "20",
-"rating": null
-*/
 @JsonSerializable()
 class ProductModel {
   @JsonKey(name: 'id')

@@ -39,6 +39,11 @@ class TextStyles {
     fontWeight: FontWeightHelper.bold,
     color: Colors.black,
   );
+  static TextStyle font20DarkGray = TextStyle(
+    fontSize: 20.sp,
+    fontWeight: FontWeightHelper.bold,
+    color: ColorsManager.darkGray,
+  );
 
   static TextStyle font16BlackBold = TextStyle(
     fontSize: 16.sp,
@@ -160,14 +165,13 @@ class TextStyles {
     color: ColorsManager.darkBlue,
   );
 
-  
   static TextStyle font16GrayRegular = TextStyle(
     fontSize: 16.sp,
     fontWeight: FontWeightHelper.regular,
     color: ColorsManager.gray,
   );
   //font18GreenAccentRegular
-static TextStyle font18GreenAccentRegular = TextStyle(
+  static TextStyle font18GreenAccentRegular = TextStyle(
     fontSize: 18.sp,
     fontWeight: FontWeightHelper.regular,
     color: ColorsManager.greenAccent,
@@ -253,6 +257,14 @@ static TextStyle font18GreenAccentRegular = TextStyle(
     fontWeight: FontWeightHelper.bold,
     color: Colors.black,
   );
+
+  static TextStyle font10MainYellow = TextStyle(
+    fontSize: 10.sp,
+    fontWeight: FontWeightHelper.bold,
+    color: ColorsManager.mainYellow,
+  );
+
+ 
 
   static TextStyle font13WhiteRegular = TextStyle(
     fontSize: 13.sp,
