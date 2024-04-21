@@ -23,4 +23,22 @@ class HomeCubit extends Cubit<HomeState> {
       emit(HomeState.error(error: error.apiErrorModel.messages ?? ''));
     });
   }
+
+
+  
+  void emitGetMoreProducts({
+    required String authKey,
+    required String userId,
+  }) async {
+    emit(const HomeState.loading());
+    final response = await _homeRepo.getMoreProductData(
+        authKey: authKey,
+        userId:userId
+        );
+    response.when(success: (homeResponse) async {
+      emit(HomeState.success(homeResponse));
+    }, failure: (error) {
+      emit(HomeState.error(error: error.apiErrorModel.messages ?? ''));
+    });
+  }
 }

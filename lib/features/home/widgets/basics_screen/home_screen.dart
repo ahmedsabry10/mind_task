@@ -4,9 +4,12 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:iconly/iconly.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:task/core/helpers/extensitions.dart';
 import 'package:task/core/helpers/spacing.dart';
+import 'package:task/core/routing/routes.dart';
 import 'package:task/core/theming/colors.dart';
 import 'package:task/core/theming/styles.dart';
+import 'package:task/core/widgets/app_text_booton.dart';
 import 'package:task/core/widgets/app_text_form_field.dart';
 import 'package:task/core/widgets/shared_constants.dart';
 import 'package:task/features/home/cubit/home_cubit.dart';
@@ -135,6 +138,28 @@ class _HomeScreenState extends State<HomeScreen> {
                         defaulyLine(),
                         verticalSpace(5),
 
+                        Row(
+          children: [
+            Text(
+              'المنتجات',
+              style: TextStyles.font20DarkGray,
+            ),
+            Spacer(),
+            AppTextButton(
+                buttonWidth: 70.w,
+                buttonHeight: 30.h,
+                borderRadius: 20,
+                verticalPadding: 3.h,
+                buttonText: "More",
+                backgroundColor: ColorsManager.thirdYellow,
+                textStyle: TextStyles.font15WhiteBold,
+                onPressed: () {
+                  context.pushNamed(
+                    Routes.moreProductScrren
+                    );
+                }),
+          ],
+        ),
                         ///Products
                         ProductWidgetForHome(
                             productModelList:

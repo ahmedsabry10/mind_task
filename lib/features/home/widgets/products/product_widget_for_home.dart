@@ -5,7 +5,6 @@ import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:task/core/helpers/spacing.dart';
 import 'package:task/core/theming/colors.dart';
 import 'package:task/core/theming/styles.dart';
-import 'package:task/core/widgets/app_text_booton.dart';
 import 'package:task/core/widgets/sliver_grid_with_height.dart';
 import 'package:task/core/widgets/star_widgets.dart';
 import 'package:task/features/home/models/product/product_model.dart';
@@ -24,24 +23,7 @@ class _ProductWidgetForHomeState extends State<ProductWidgetForHome> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Row(
-          children: [
-            Text(
-              'المنتجات',
-              style: TextStyles.font20DarkGray,
-            ),
-            Spacer(),
-            AppTextButton(
-                buttonWidth: 70.w,
-                buttonHeight: 30.h,
-                borderRadius: 20,
-                verticalPadding: 3.h,
-                buttonText: "More",
-                backgroundColor: ColorsManager.thirdYellow,
-                textStyle: TextStyles.font15WhiteBold,
-                onPressed: () {}),
-          ],
-        ),
+        
         GridView.builder(
           shrinkWrap: true,
           physics: NeverScrollableScrollPhysics(),

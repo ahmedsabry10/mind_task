@@ -117,6 +117,67 @@ class _ApiService implements ApiService {
     return value;
   }
 
+  @override
+  Future<MoreProductModel> getMoreProductData(
+    String lang,
+    String auth_key,
+    String user_id,
+    String search_with,
+    String home_types,
+    int item_count,
+    int limit,
+  ) async {
+    final _extra = <String, dynamic>{};
+    final queryParameters = <String, dynamic>{};
+    final _headers = <String, dynamic>{r'Accept-Language': lang};
+    _headers.removeWhere((k, v) => v == null);
+    final _data = FormData();
+    _data.fields.add(MapEntry(
+      'auth_key',
+      auth_key,
+    ));
+    _data.fields.add(MapEntry(
+      'user_id',
+      user_id,
+    ));
+    _data.fields.add(MapEntry(
+      'search_with',
+      search_with,
+    ));
+    _data.fields.add(MapEntry(
+      'home_types',
+      home_types,
+    ));
+    _data.fields.add(MapEntry(
+      'item_count',
+      item_count.toString(),
+    ));
+    _data.fields.add(MapEntry(
+      'limit',
+      limit.toString(),
+    ));
+    final _result = await _dio
+        .fetch<Map<String, dynamic>>(_setStreamType<MoreProductModel>(Options(
+      method: 'POST',
+      headers: _headers,
+      extra: _extra,
+      contentType: 'multipart/form-data',
+    )
+            .compose(
+              _dio.options,
+              'products/search_filter.php',
+              queryParameters: queryParameters,
+              data: _data,
+            )
+            .copyWith(
+                baseUrl: _combineBaseUrls(
+              _dio.options.baseUrl,
+              baseUrl,
+            ))));
+    final value = MoreProductModel.fromJson(_result.data!);
+    return value;
+  }
+
   RequestOptions _setStreamType<T>(RequestOptions requestOptions) {
     if (T != dynamic &&
         !(requestOptions.responseType == ResponseType.bytes ||

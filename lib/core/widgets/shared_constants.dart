@@ -1,3 +1,4 @@
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:task/core/theming/colors.dart';
 import 'package:flutter/cupertino.dart';
@@ -7,7 +8,14 @@ String? uId = '';
 
 Widget defaulyLine()=>Container(
   width: double.infinity,
-  height: 1,
+  height: 1.h,
+  color: Colors.grey[300]
+);
+
+Widget defaulySolidLine()=>Container(
+  width: double.infinity,
+  height: 4.h,
+  
   color: Colors.grey[300]
 );
 class Constants {

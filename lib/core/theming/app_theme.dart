@@ -55,10 +55,12 @@ ThemeData appTheme() {
     appBarTheme: const AppBarTheme(
         backgroundColor: Colors.transparent,
         centerTitle: true,
+        
         elevation: 0,
         iconTheme: IconThemeData(
           color: Colors.black,
         ),
+        
         titleTextStyle: TextStyle(
             fontFamily: "Jannah",
             color: ColorsManager.mainYellow,

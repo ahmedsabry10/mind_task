@@ -1,9 +1,9 @@
 class ApiConstants {
   //api constants
-  static const String apiBaseUrl =
-      "https://ihoneyherb.com/test-application/";
+  static const String apiBaseUrl = "https://ihoneyherb.com/test-application/";
   static const String login = "login.php";
   static const String home = "home/home.php";
+  static const String moreProduct = "products/search_filter.php";
   //header constants
   static const String langTitle = "Accept-Language";
   static const String langBody = "ar";
@@ -14,9 +14,7 @@ class ApiConstants {
   static const String androidPlatform = '1';
   static const String iosPlatform = '2';
   static const String deviceIdTitle = 'device_id';
-  static const String deviceIdBody= 'bfghtr5yrtytd654e6trd';
-
-
+  static const String deviceIdBody = 'bfghtr5yrtytd654e6trd';
 }
 
 class ApiErrors {

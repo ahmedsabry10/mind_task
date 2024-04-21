@@ -93,42 +93,7 @@ class _MainHomeScreenState extends State<MainHomeScreen> {
               ],
             ),
           ),
-          // floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
-          // floatingActionButton: FloatingActionButton(
-          //   shape: StadiumBorder(
-          //     side: BorderSide(color: Colors.white , width: 4),
-          //   ),
-          //   child: Icon(
-          //     Icons.add
-          //   ),
-          //     onPressed: (){
-
-          // }),
-          //     bottomNavigationBar: BottomAppBar(
-          //       shape: const CircularNotchedRectangle(),
-          //       notchMargin: 8,
-          //       child: BottomNavigationBar(
-          //         currentIndex: cubit.currentIndex,
-          //       onTap: (index) {
-          //         cubit.changeIndex(index);
-          //       },
-          //         items: const [
-          //           BottomNavigationBarItem(
-          //             label: "",
-          //             icon: Icon(Icons.home)),
-          //           BottomNavigationBarItem(
-          //              label: "",
-          //             icon: Icon(Icons.list)),
-          //           BottomNavigationBarItem(
-          //              label: "",
-          //             icon: Icon(Icons.favorite)),
-          //           BottomNavigationBarItem(
-          //              label: "",
-          //             icon: Icon(Icons.person)),
-          //         ],
-          //       ),
-          //     ),
-        );
+            );
       },
     );
   }

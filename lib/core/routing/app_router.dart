@@ -8,6 +8,7 @@ import 'package:task/features/home/widgets/basics_screen/home_screen.dart';
 import 'package:task/features/home/main_home_cubit/App_cubit.dart';
 import 'package:task/features/home/main_home_cubit/app_states.dart';
 import 'package:task/features/home/main_home_screen.dart';
+import 'package:task/features/home/widgets/basics_screen/more_products.dart';
 import 'package:task/injection.dart';
 
 class AppRouter {
@@ -48,6 +49,12 @@ class AppRouter {
             create: (context) => getIt<LoginCubit>(),
             child: const LoginScreen(),
           ),
+        );
+
+        case Routes.moreProductScrren:
+        return MaterialPageRoute(
+          builder: (_) => BlocProvider(
+              create: (context) => getIt<HomeCubit>(), child: MoreProductScreen()),
         );
 
       default:
