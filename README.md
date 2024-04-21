@@ -1,16 +1,25 @@
-# task
+# mind task
 
-A new Flutter project.
+task job :: flutter 
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+Some Screen Of this task From Device  :
 
-A few resources to get you started if this is your first Flutter project:
+1- Login Screen
+![login](https://github.com/ahmedsabry10/mind_task/assets/93078689/810c2e54-b48e-4bac-a2b4-baed74c8e91b)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+2- Home Screen
+
+![home1](https://github.com/ahmedsabry10/mind_task/assets/93078689/467ca8fe-2d39-4370-a0af-ef3b6073dd2c)
+
+![home2](https://github.com/ahmedsabry10/mind_task/assets/93078689/dc2496c8-29f3-47f0-ad15-f94f79f34f02)
+
+![home3](https://github.com/ahmedsabry10/mind_task/assets/93078689/63b977da-70ea-4918-9eb2-c5f0eb2aadbf)
+
+
+
+
+
+
