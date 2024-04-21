@@ -1,9 +1,9 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:task/features/home/app_cubit/app_states.dart';
 import 'package:task/features/home/widgets/basics_screen/favourite_screen.dart';
 import 'package:task/features/home/widgets/basics_screen/home_screen.dart';
-import 'package:task/features/home/main_home_cubit/app_states.dart';
 import 'package:task/features/home/widgets/basics_screen/list_screen.dart';
 import '../widgets/basics_screen/ProfileScreen.dart';
 

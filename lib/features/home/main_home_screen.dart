@@ -3,8 +3,8 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:iconly/iconly.dart';
 import 'package:task/core/theming/colors.dart';
-import 'package:task/features/home/main_home_cubit/App_cubit.dart';
-import 'package:task/features/home/main_home_cubit/app_states.dart';
+import 'package:task/features/home/app_cubit/app_cubit.dart';
+import 'package:task/features/home/app_cubit/app_states.dart';
 
 class MainHomeScreen extends StatefulWidget {
   static const String routeName = "HomeScreen";
