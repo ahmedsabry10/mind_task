@@ -48,7 +48,7 @@ class _NewProductForHomeState extends State<NewProductForHome> {
                                   SliverGridDelegateWithFixedCrossAxisCountAndFixedHeight(
                                 mainAxisSpacing: 4.0,
                                 crossAxisSpacing: 10,
-                                height: 240.h,
+                                height: 235.h,
                                 crossAxisCount: 2,
                               ),
                               itemCount:

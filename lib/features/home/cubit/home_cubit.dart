@@ -6,6 +6,8 @@ class HomeCubit extends Cubit<HomeState> {
   final HomeRepo _homeRepo;
   HomeCubit(this._homeRepo) : super(const HomeState.initial());
 
+  
+
   void emitGetData({
     required String authKey,
     required String userId,

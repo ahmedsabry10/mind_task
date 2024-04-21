@@ -30,6 +30,7 @@ class _HomeScreenState extends State<HomeScreen> {
     getData(context);
     super.initState();
   }
+
   double rating = 3.5;
   @override
   Widget build(BuildContext context) {
@@ -135,25 +136,28 @@ class _HomeScreenState extends State<HomeScreen> {
                         verticalSpace(5),
 
                         ///Products
-                        ProductWidgetForHome(productModelList: getHomeDataResponse.data.products ),
+                        ProductWidgetForHome(
+                            productModelList:
+                                getHomeDataResponse.data.products),
 
                         verticalSpace(5),
                         defaulyLine(),
                         verticalSpace(5),
 
                         ///Products choosen for you
-                        ChoosenProductForHome(productModelList: getHomeDataResponse.data.selectedProducts),
-                        
+                        ChoosenProductForHome(
+                            productModelList:
+                                getHomeDataResponse.data.selectedProducts),
+
                         verticalSpace(5),
                         defaulyLine(),
                         verticalSpace(5),
 
                         ///New Products
-                        NewProductForHome(productModelList:getHomeDataResponse.data.newProducts),
-
-
-                   
-                        ],
+                        NewProductForHome(
+                            productModelList:
+                                getHomeDataResponse.data.newProducts),
+                      ],
                     );
 
                     ///error

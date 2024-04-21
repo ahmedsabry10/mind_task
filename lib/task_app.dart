@@ -32,7 +32,7 @@ class TaskApp extends StatelessWidget {
           ],
           locale: Locale('ar'),
           debugShowCheckedModeBanner: false,
-          initialRoute:isAuth?Routes.homeScreen :Routes.loginScreen,
+          initialRoute:isAuth?Routes.mainHomeScreen :Routes.loginScreen,
           onGenerateRoute: appRouter.generateRoute,
         ));
   }

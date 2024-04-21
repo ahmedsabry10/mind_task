@@ -64,17 +64,24 @@ ThemeData appTheme() {
             color: ColorsManager.mainYellow,
             fontSize: 20,
             fontWeight: FontWeight.w500)),
-    bottomNavigationBarTheme: const BottomNavigationBarThemeData(
-        backgroundColor: ColorsManager.lightScaffoldBackgroundColor,
-        elevation: 0,
+     bottomNavigationBarTheme: const BottomNavigationBarThemeData(
+        backgroundColor: Colors.transparent,
+        elevation: 0 ,
+        showSelectedLabels: true,
+        showUnselectedLabels: false,
         selectedIconTheme: IconThemeData(
-          color: ColorsManager.mainYellow,
+          size: 36.0,
+          color:ColorsManager.mainYellow,
         ),
-        unselectedIconTheme: IconThemeData(
-          color: Colors.black,
+        unselectedIconTheme:  IconThemeData(
+          size: 24.0,
+          color: ColorsManager.gray,
         ),
-        selectedItemColor: ColorsManager.mainYellow,
-        unselectedItemColor: Colors.black),
+        selectedLabelStyle: TextStyle(
+            color:ColorsManager.mainYellow,
+        ),
+        selectedItemColor:ColorsManager.mainYellow,
+      ),
 
     //fontFamily: 'jannah',
   );
